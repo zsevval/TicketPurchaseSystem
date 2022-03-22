@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9BAC0B5-7056-45EA-B518-03BA08D7379B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Giris</RootNamespace>
+    <AssemblyName>Giris</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitFormu.Designer.cs">
+      <DependentUpon>KayitFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KonserFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KonserFormu.Designer.cs">
+      <DependentUpon>KonserFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuzeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuzeForm.Designer.cs">
+      <DependentUpon>MuzeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuzeOnayFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuzeOnayFormu.Designer.cs">
+      <DependentUpon>MuzeOnayFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformProjectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlatformProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformProjectDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlatformProjectDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitFormu.resx">
+      <DependentUpon>KayitFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonserFormu.resx">
+      <DependentUpon>KonserFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuzeForm.resx">
+      <DependentUpon>MuzeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuzeOnayFormu.resx">
+      <DependentUpon>MuzeOnayFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="PlatformProjectDataSet.xsc">
+      <DependentUpon>PlatformProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PlatformProjectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlatformProjectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PlatformProjectDataSet.xss">
+      <DependentUpon>PlatformProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PlatformProjectDataSet1.xsc">
+      <DependentUpon>PlatformProjectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PlatformProjectDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlatformProjectDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PlatformProjectDataSet1.xss">
+      <DependentUpon>PlatformProjectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hubble2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concert.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\museum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\travel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\travel2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\travel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\travel21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\travel3.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
